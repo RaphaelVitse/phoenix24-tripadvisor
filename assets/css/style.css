@@ -1,0 +1,56 @@
+/* font-family: "TS-Reg", sans-serif; */
+/* font-family: "TS-Med", sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1095px;
+  margin: 0 auto;
+}
+
+/* PARTIE HEADER */
+header {
+  height: 60px;
+  width: 1095px;
+  /* background: salmon; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.liste-nav {
+  /* border: 1px solid black; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-self: center;
+}
+
+nav {
+  /* background: lightblue; */
+  width: 50%;
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+header img {
+  width: 190px;
+  height: 40px;
+}
+header button {
+  width: 160px;
+  height: 46px;
+  border-radius: 40px;
+  border: none;
+  background: black;
+  color: white;
+  font-family: "TS-Reg", sans-serif;
+}
