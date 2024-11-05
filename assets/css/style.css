@@ -32,9 +32,9 @@ header {
 
 nav {
   /* background: lightblue; */
-  width: 50%;
+  /* width: 50%; */
   display: flex;
-  gap: 32px;
+  gap: 40px;
 }
 
 nav a {
@@ -46,11 +46,81 @@ header img {
   height: 40px;
 }
 header button {
-  width: 160px;
+  width: 240px;
   height: 46px;
   border-radius: 40px;
   border: none;
   background: black;
   color: white;
   font-family: "TS-Reg", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* PARTIE HAUTE */
+
+h1 {
+  margin-top: 40px;
+  font-family: "TS-Med", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+h1 span {
+  color: #ff5d5d;
+  font-size: 60px;
+  font-weight: bold;
+}
+.under-h1 {
+  margin-top: 10px;
+  font-family: "TS-Reg";
+  font-weight: 200;
+  font-size: 14px;
+  color: gray;
+}
+.under-h1 a {
+  color: grey;
+}
+.search-infos {
+  /* background: crimson; */
+  width: 1095px;
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  font-family: "TS-med";
+  font-size: 16px;
+}
+.search-infos li {
+  border: 1px solid black;
+  width: 172px;
+  height: 64px;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-left-container {
+  /* background: greenyellow; */
+  margin-top: 40px;
+  height: 430px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+}
+
+.photo-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.img1 {
+  width: 615px;
+  height: 430px;
+  object-fit: cover;
+}
+.img2,
+.img3 {
+  width: 479px;
+  height: 214px;
+  object-fit: cover;
 }
