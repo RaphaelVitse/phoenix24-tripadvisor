@@ -232,7 +232,7 @@ h1 span {
 /* PARTIES LES IMMANQUABLES */
 
 .entertainment-container {
-  margin-bottom: 40px;
+  margin: 40px 0px;
 }
 .entertainment-container h2 {
   font-size: 28px;
@@ -242,20 +242,31 @@ h1 span {
 }
 
 .carrousel-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   gap: 15px;
   height: 280px;
   overflow: hidden;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 .text-carrousel {
-  background: pink;
+  /* background: pink; */
   width: calc((100% - 45px) / 4);
   flex-shrink: 0;
 }
+.text-carrousel h3 {
+  font-family: TS-Reg;
+  font-size: 25px;
+  font-weight: bold;
+}
+.text-carrousel p {
+  font-family: TS-Reg;
+  font-size: 15px;
+  margin: 15px 0px;
+  padding-right: 45px;
+}
 .img-carrousel {
-  background: crimson;
+  /* background: crimson; */
   display: flex;
   gap: 15px;
   flex-shrink: 0;
@@ -263,11 +274,11 @@ h1 span {
 .img-carrousel img {
   height: 70%;
   width: 100%;
-
   object-fit: cover;
 }
 .img-carrousel div {
   position: relative;
+  width: 272px;
 }
 .fa-heart {
   position: absolute;
@@ -315,7 +326,7 @@ footer div {
 }
 footer p span {
   font-weight: bold;
-  font-size: TS-Med;
+  font-family: TS-Med;
 }
 footer img {
   margin-right: 10px;
