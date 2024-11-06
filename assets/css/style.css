@@ -80,6 +80,9 @@ h1 span {
 .under-h1 a {
   color: grey;
 }
+
+/* PARTIE FILTRES RECHERCHE*/
+
 .search-infos {
   /* background: crimson; */
   width: 1095px;
@@ -89,6 +92,7 @@ h1 span {
   font-family: "TS-med";
   font-size: 16px;
 }
+
 .search-infos li {
   border: 1px solid black;
   width: 172px;
@@ -98,6 +102,13 @@ h1 span {
   display: flex;
   justify-content: space-between;
 }
+.search-infos li:hover {
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
+/* PARTIE ALBUM PHOTOS */
 
 .photo-left-container {
   /* background: greenyellow; */
