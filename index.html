@@ -13,29 +13,35 @@
     <title>Tripadvisor</title>
   </head>
   <body>
-    <header>
-      <img src="./assets/img/Tripadvisor_logo.svg" alt="logo Tripadvisor" />
+    <!-- PARTIE HEADER -->
 
-      <nav>
-        <ul class="liste-nav">
-          <li>
+    <header>
+      <div class="container">
+        <img src="./assets/img/Tripadvisor_logo.svg" alt="logo Tripadvisor" />
+
+        <nav>
+          <div>
             <i class="fa-solid fa-pen"></i>
             <a href="#reviews">Avis</a>
-          </li>
-          <li>
+          </div>
+          <div>
             <i class="fa-regular fa-heart"></i>
             <a href="#favoris"> Voyages</a>
-          </li>
-          <li>
+          </div>
+          <div>
             <i class="fa-regular fa-bell"></i>
             <a href="#Alert">Alertes</a>
-          </li>
-        </ul>
-        <button>Connectez-vous</button>
-      </nav>
+          </div>
+          <button>Connectez-vous</button>
+          <div>
+            <i class="fa-regular fa-bell"></i>
+            <a href="#Alert">Panier</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="container">
       <div class="container">
         <h1><span>Explorez</span> Paris</h1>
         <p class="under-h1">
@@ -72,14 +78,101 @@
           </ul>
         </nav>
 
-        <div class="photo-left-container">
-          <img class="img1" src="./assets/img/vue seine.jpg" alt="" />
-          <div class="photo-right-container">
-            <img class="img2" src="./assets/img/moto.jpg" alt="" />
-            <img class="img3" src="./assets/img/tour eiffel.jpg" alt="" />
+        <div class="photos-container">
+          <div class="left-picture">
+            <img src="./assets/img/vue seine.jpg" alt="" />
+          </div>
+          <div class="right-column">
+            <div>
+              <img src="./assets/img/moto.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./assets/img/tour eiffel.jpg" alt="" />
+            </div>
           </div>
         </div>
+
+        <!-- PARTIE DESCRIPTION DE LA VILLE  -->
+        <div class="container-city-description">
+          <div class="city-description-left">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="city-description-right">
+            <div class="text-description">
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button>Créer un voyage</button>
+            </div>
+
+            <div class="img">
+              <img src="./assets/img/google-map-paris.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PARTIE LES INMANQUABLES  -->
+        <section class="entertainment-container">
+          <h2>Paris : les immanquables</h2>
+          <div class="carrousel-container">
+            <div class="text-carrousel">
+              <h3>Se divertir</h3>
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Paris.
+              </p>
+              <p>Tout afficher</p>
+            </div>
+            <div class="img-carrousel">
+              <div>
+                <img
+                  src="./assets/img/monuments paris/eiffeltoren.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="./assets/img/monuments paris/arc-de-triomphe-at-night.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img src="./assets/img/monuments paris/louvre.jpg" alt="" />
+              </div>
+              <div>
+                <img
+                  src="./assets/img/monuments paris/marche-vernaison-maison.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="./assets/img/monuments paris/vue-de-la-cour-d-honneur.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="./assets/img/monuments paris/the-bookstore.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
+    <footer></footer>
   </body>
 </html>

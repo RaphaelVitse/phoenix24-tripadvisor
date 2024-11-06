@@ -5,56 +5,69 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 1095px;
+.container {
+  width: 1135px;
   margin: 0 auto;
+  /* border: 2px blueviolet solid; */
+}
+body,
+* {
+  font-family: "TS-Reg";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: TS-Med;
+  font-weight: bold;
+}
+h1 span {
+  color: rgb(254, 93, 93);
 }
 
 /* PARTIE HEADER */
 header {
-  height: 60px;
-  width: 1095px;
+  padding: 10px 0px;
+  background: white;
+  position: sticky;
+  top: 0px;
+}
+header img {
+  /* width: 190px; */
+  height: 50px;
+}
+header .container {
   /* background: salmon; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
 }
-.liste-nav {
+header nav {
   /* border: 1px solid black; */
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-self: center;
+  gap: 20px;
+  align-items: center;
 }
 
-nav {
-  /* background: lightblue; */
-  /* width: 50%; */
-  display: flex;
-  gap: 40px;
+header nav div {
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+header nav div:hover {
+  background: lightgray;
+  cursor: pointer;
 }
 
 nav a {
   text-decoration: none;
   color: black;
 }
-header img {
-  width: 190px;
-  height: 40px;
-}
 header button {
-  width: 240px;
-  height: 46px;
-  border-radius: 40px;
   border: none;
   background: black;
+  padding: 15px 25px;
+  border-radius: 50px;
   color: white;
-  font-family: "TS-Reg", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 /* PARTIE HAUTE */
@@ -85,8 +98,8 @@ h1 span {
 
 .search-infos {
   /* background: crimson; */
-  width: 1095px;
-  margin-top: 40px;
+
+  margin: 40px 0px;
   display: flex;
   gap: 15px;
   font-family: "TS-med";
@@ -110,28 +123,145 @@ h1 span {
 
 /* PARTIE ALBUM PHOTOS */
 
-.photo-left-container {
-  /* background: greenyellow; */
-  margin-top: 40px;
+.photos-container {
+  /* background: yellow; */
   height: 430px;
   display: flex;
-  flex-wrap: nowrap;
   gap: 2px;
 }
 
-.photo-right-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.img1 {
-  width: 615px;
+.left-picture {
+  flex: 1;
   height: 430px;
+  /* background: blue; */
+}
+.left-picture img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
-.img2,
-.img3 {
-  width: 479px;
-  height: 214px;
+
+.right-column {
+  width: 480px;
+  /* background: red; */
+}
+
+.right-column div:first-child {
+  height: calc(50% - 1px);
+  /* background: lightgreen; */
+  margin-bottom: 2px;
+}
+
+.right-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right-column div:last-child {
+  /* background: pink; */
+  height: calc(50% - 1px);
+  object-fit: cover;
+}
+
+/* PARTIE DESCRIPTION DE LA VILLE */
+
+.container-city-description {
+  height: 470px;
+  /* background: blue; */
+  margin: 40px 0px;
+  display: flex;
+}
+.city-description-left {
+  flex: 1;
+  /* border: 3px solid red; */
+}
+
+.city-description-left h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: TS-med;
+  margin-bottom: 40px;
+}
+.city-description-left p {
+  font-size: 18px;
+  font-family: TS-Reg, serif;
+  padding-right: 150px;
+}
+.city-description-right {
+  width: 430px;
+  /* background: green; */
+  /* border: 3px solid greenyellow; */
+}
+
+.text-description {
+  height: 280px;
+  background: #ff5d5d;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+}
+.city-description-right .img {
+  height: 190px;
+}
+.city-description-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.city-description-right h3 {
+  font-family: TS-Med;
+  font-size: 30px;
+}
+.city-description-right p {
+  font-family: TS-Reg;
+  font-size: 16px;
+  margin: 40px 0px;
+}
+.city-description-right button {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 15px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* PARTIES LES IMMANQUABLES */
+
+.entertainment-container {
+  margin-bottom: 40px;
+}
+.entertainment-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: TS-med;
+  margin-bottom: 40px;
+}
+
+.carrousel-container {
+  border: 2px solid blue;
+  display: flex;
+  gap: 15px;
+  height: 280px;
+  overflow: hidden;
+}
+.text-carrousel {
+  background: pink;
+  width: calc((100% - 45px) / 4);
+  flex-shrink: 0;
+}
+.img-carrousel {
+  background: crimson;
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+  overflow: scroll;
+}
+.img-carrousel img {
+  height: 70%;
+  width: 100%;
   object-fit: cover;
 }
