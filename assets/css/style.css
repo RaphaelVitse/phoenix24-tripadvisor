@@ -298,3 +298,26 @@ h1 span {
   font-size: 14px;
   background: green;
 } */
+
+/* PARTIE FOOTER */
+footer {
+  background: #faf1ed;
+  height: 156px;
+  display: flex;
+}
+footer div {
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: TS-Reg;
+}
+footer p span {
+  font-weight: bold;
+  font-size: TS-Med;
+}
+footer img {
+  margin-right: 10px;
+  width: 40px;
+}
