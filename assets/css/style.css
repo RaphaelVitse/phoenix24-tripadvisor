@@ -38,7 +38,7 @@ h1 span {
   gap: 25px;
   padding: 90px 0;
   border-radius: 20px;
-  display: flex;
+  display: none;
   position: relative;
   box-shadow: 5px 5px 10px 1px #000000;
 }
