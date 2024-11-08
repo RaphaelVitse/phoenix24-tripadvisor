@@ -1,8 +1,10 @@
-const modalScreen = document.getElementById("btn-connect");
-const modal = document.getElementsByClassName("modal");
+document.addEventListener("DOMContentLoaded", () => {
+  const switchModalOpening = document.querySelector("#btn-connect");
+  const modal = document.querySelector(".modal");
 
-modalScreen.addEventListener("click", () => {
-  console.log("je clique");
+  switchModalOpening.addEventListener("click", () => {
+    console.log("je clique");
 
-  modal.classList.add("on");
+    modal.classList.add("on");
+  });
 });
