@@ -28,7 +28,7 @@ h1 span {
 
 /* PARTIE MODAL */
 .modal {
-  background: greenyellow;
+  background: gainsboro;
   width: 484px;
   height: 578px;
   margin: 80px auto;
@@ -38,8 +38,9 @@ h1 span {
   gap: 25px;
   padding: 90px 0;
   border-radius: 20px;
-  display: none;
+  display: flex;
   position: relative;
+  box-shadow: 5px 5px 10px 1px #000000;
 }
 
 .modal form {
