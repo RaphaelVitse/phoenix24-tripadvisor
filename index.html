@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/icons.css" />
     <script
       src="https://kit.fontawesome.com/b17b3d401b.js"
       crossorigin="anonymous"
@@ -17,65 +18,118 @@
 
     <header>
       <div class="container">
+        <div class="burger-menu">
+          <i class="icon-more_vertical"></i>
+        </div>
         <img src="./assets/img/Tripadvisor_logo.svg" alt="logo Tripadvisor" />
 
         <nav>
-          <div>
-            <i class="fa-solid fa-pen"></i>
+          <div class="previews">
+            <i class="icon-pencil"></i>
             <a href="#reviews">Avis</a>
           </div>
-          <div>
-            <i class="fa-regular fa-heart"></i>
+          <div class="favoris">
+            <i class="icon-heart"></i>
             <a href="#favoris"> Voyages</a>
           </div>
-          <div>
-            <i class="fa-regular fa-bell"></i>
+          <div class="alert">
+            <i class="icon-"></i>
             <a href="#Alert">Alertes</a>
           </div>
-          <button>Connectez-vous</button>
-          <div>
-            <i class="fa-regular fa-bell"></i>
-            <a href="#Alert">Panier</a>
+          <button id="btn-connect">Connectez-vous</button>
+
+          <div class="search">
+            <a href="#search"><i class="icon-search"></i></a>
+          </div>
+          <div class="panier">
+            <i class="icon-empty_cart"></i>
+            <a href="#Panier">Panier</a>
           </div>
         </nav>
       </div>
     </header>
 
+    <!-- PARTIE MODAL     -->
     <main class="container">
-      <div class="container">
+      <div class="modal">
+        <div class="close"><p>X</p></div>
+        <h2>Formulaire de contact</h2>
+        <form action="" id="contactForm">
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            value=""
+            placeholder="Votre prénom"
+          />
+
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            value=""
+            placeholder="Votre nom"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="E-mail"
+          />
+
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Ecrivez ici votre message..."
+          ></textarea>
+          <button id="btn" type="submit">Envoyer le message</button>
+        </form>
+      </div>
+
+      <div>
         <h1><span>Explorez</span> Paris</h1>
         <p class="under-h1">
           Les revenus influencent le choix des expériences présentées sur cette
           page : <a href="">en savoir plus.</a>
         </p>
 
-        <nav>
-          <ul class="search-infos">
-            <li>
-              <a href="#">Hôtels</a>
-              <i class="fa-solid fa-bed"></i>
-            </li>
-            <li>
-              <a href="#">Location de vacances </a>
-              <i class="fa-solid fa-house-user"></i>
-            </li>
-            <li>
-              <a href="#">Activités</a>
-              <i class="fa-solid fa-ticket"></i>
-            </li>
-            <li>
-              <a href="#">Restaurant</a>
-              <i class="fa-solid fa-utensils"></i>
-            </li>
-            <li>
-              <a href="#">Forums de voyage </a>
-              <i class="fa-regular fa-comments"></i>
-            </li>
-            <li>
-              <a href="#">Plus</a>
-              <i class="fa-solid fa-plus"></i>
-            </li>
-          </ul>
+        <nav class="search-infos">
+          <div>
+            <p>Hôtels</p>
+            <i class="icon-hotels"></i>
+          </div>
+          <div>
+            <p>Location de vacances</p>
+            <i class="icon-vacation_rentals"></i>
+          </div>
+          <div>
+            <p>Activités</p>
+            <i class="icon-attractions"></i>
+          </div>
+          <div>
+            <p>Restaurant</p>
+            <i class="icon-restaurants"></i>
+          </div>
+          <div>
+            <p>Forums de voyage</p>
+            <i class="icon-forums"></i>
+          </div>
+          <div class="display-xs">
+            <p>Vols</p>
+            <i class="icon-flights"></i>
+          </div>
+          <div class="display-xs">
+            <p>Croisières</p>
+            <i class="icon-cruises"></i>
+          </div>
+          <div>
+            <p>Plus</p>
+            <i class="icon-more_horizontal"></i>
+          </div>
         </nav>
 
         <div class="photos-container">
@@ -89,6 +143,22 @@
             <div>
               <img src="./assets/img/tour eiffel.jpg" alt="" />
             </div>
+          </div>
+        </div>
+
+        <div class="chevrons">
+          <div class="left-chevrons">
+            <p>Europe</p>
+            <i class="icon-single_chevron_right"></i>
+            <p>France</p>
+            <i class="icon-single_chevron_right"></i>
+            <p>Ile-de-France</p>
+            <i class="icon-single_chevron_right"></i>
+            <p>Paris</p>
+            <i class="icon-caret_down"></i>
+          </div>
+          <div>
+            <p>Visiter : Paris</p>
           </div>
         </div>
 
@@ -123,6 +193,7 @@
         </div>
 
         <!-- PARTIE LES INMANQUABLES  -->
+
         <section class="entertainment-container">
           <h2>Paris : les immanquables</h2>
           <div class="carrousel-container">
@@ -215,5 +286,6 @@
         <p>Made at <span>Le Reacteur</span> by <span>Marty McFly</span></p>
       </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
