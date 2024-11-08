@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const switchModalOpening = document.querySelector("#btn-connect");
   const switchModalClosing = document.querySelector(".close");
+
   const modal = document.querySelector(".modal");
 
   switchModalOpening.addEventListener("click", () => {
